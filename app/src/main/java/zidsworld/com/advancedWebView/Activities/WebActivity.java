@@ -328,10 +328,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                     int id = menuItem.getItemId();
 
-                    if (id == R.id.nav_home) {
-                        HandleDrawerUrls(HomePage);
-
-                    }  else if (id == R.id.nav_contactus) {
+              if (id == R.id.nav_contactus) {
 
                         Intent intent = new Intent(Intent.ACTION_DIAL);
                         intent.setData(Uri.parse("tel:" + MyPhoneNo));

@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">WebViewPlus</string> //app name
+    <string name="app_name">CWebview</string> //app name
     <string name="nav_header_subtitle">Professional webView</string>
     <string name="splash_subtitle"></string>
 

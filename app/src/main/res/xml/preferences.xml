@@ -15,14 +15,6 @@
             android:defaultValue="false"/>
 
         <SwitchPreference
-            app:iconSpaceReserved="true"
-            android:key="nativeload"
-            android:summary="A cool progress bar"
-            android:icon="@drawable/ic_loading_svg"
-            android:title="Native progressbar"
-            android:defaultValue="false"/>
-
-        <SwitchPreference
             android:key="permission_query"
             android:icon="@drawable/permission"
             app:allowDividerAbove="true"

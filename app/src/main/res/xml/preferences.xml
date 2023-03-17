@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceCategory>
+
+        <SwitchPreference
+            android:key="downloadinapp"
+            android:enabled="false"
+            app:isPreferenceVisible="false"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="true"
+            app:allowDividerBelow="true"
+            android:summary="Files will be downloaded inside the app"
+            android:title="@string/downloadinsideapp"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="nativeload"
+            android:summary="A cool progress bar"
+            android:icon="@drawable/ic_loading_svg"
+            android:title="Native progressbar"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="permission_query"
+            android:icon="@drawable/permission"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:isPreferenceVisible="false"
+            android:title="@string/permiss_title"
+            android:summary="@string/perm_description"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="loadLastUrl"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            android:icon="@drawable/last_page"
+            app:isPreferenceVisible="false"
+            android:title="Restore Last Page"
+            android:summary="@string/lastpage"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

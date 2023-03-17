@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/window_container"
+    android:focusable="true"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/window_close_btn"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/window_close_btn"
+        android:id="@+id/web_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     </RelativeLayout>
+
+</RelativeLayout>

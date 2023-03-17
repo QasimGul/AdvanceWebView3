@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/urllayoutroot"
+    android:visibility="gone"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_browser_svg"
+        android:layout_height="120dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:text="Advanced Plus Web Tester"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#E4E1E1"
+        android:textStyle="bold"
+        android:fontFamily="@font/rubik_sembold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#E4E1E1"
+        android:paddingTop="5dp"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/poppins_reg"
+        android:layout_width="wrap_content"
+        android:text="This function lets you test your website without going to google, you can disable this in source code"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/urledittextbox"
+        android:background="@drawable/rounded_layout"
+        android:hint="Enter url with http://"
+        android:padding="10dp"
+        android:inputType="textUri"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#DEDEE0"
+        android:textAlignment="viewStart"
+        android:imeOptions="actionGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:text="Cancel"
+        android:textColor="@color/textcolor"
+        android:onClick="hideUrlLayout"
+        android:background="@drawable/rounded_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO" />
+    </LinearLayout>
+
+</LinearLayout>

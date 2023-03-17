@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "zidsworld.com.advancedplus",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 25,
+      "versionName": "2.5",
+      "outputFile": "25_February_2023 _Advanced_Plus-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

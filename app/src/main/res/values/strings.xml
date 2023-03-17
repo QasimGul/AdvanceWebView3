@@ -1,0 +1,87 @@
+<resources>
+
+    <string name="app_name">WebViewPlus</string> //app name
+    <string name="nav_header_subtitle">Professional webView</string>
+    <string name="splash_subtitle"></string>
+
+    <string name="ADMOB_BANNER_AD_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string> // banner adunit id
+    <string name="ADMOB_APP_ID">ca-app-pub-3940256099942544~3347511713</string> // app id
+    <string name="ADMOB_INTERSTITIAL_AD_ID">ca-app-pub-3940256099942544/1033173712</string> // interstitial ad unit id
+
+<!--     TEST ADMOB BANNER AD_UNIT ID-->
+    <string name="test_admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+<!--    TEST ADMOB APP ID-->
+    <string name="test_admob_appid">ca-app-pub-3940256099942544~3347511713</string>
+
+<!--    TEST ADMOB INTERSTITIAL AD UNIT ID-->
+    <string name="test_admob_interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="location_access">Enable location | GPS</string>
+    <string name="fullscreenalways">Disable statusbar</string>
+    <string name="todo">TODO</string>
+
+    <string name="home">Home</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="share">Share</string>
+    <string name="usedarktheme">Dark theme</string>
+
+    <string name="youtube">Youtube</string>
+    <string name="contactus">Contact Us</string>
+    <string name="facebook">Facebook</string>
+    <string name="telegram">Telegram </string>
+    <string name="instagram">Instagram</string>
+    <string name="howto">How to use this App</string>
+    <string name="update">Update App</string>
+    <string name="rateus">Rate Us</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="internet_error"> <b>Error </b> - Your connection or host may be down </string>
+    <string name="downloadinsideapp">Download files inapp</string>
+    <string name="orders">Orders</string>
+    <string name="chat">Chat</string>
+    <string name="account">Account</string>
+    <string name="nightmodedesc">Turns webpages dark</string>
+    <string name="adsSummary">Hide Advertisements in web. Only some Ad networks supported (Experimental) </string>
+    <string name="immersive_description"><![CDATA[Hides toolbar & status bar]]></string>
+    <string name="perm_description">Initiate permission request on App Starting, Some permissions are important for proper app functions</string>
+    <string name="immersive">Immersive mode</string>
+    <string name="permiss_title">Request Permissions</string>
+    <string name="lastpage">If enabled, app may load the last visited page, helpful if app closed unexpectedly</string>
+    <string name="swiperefresh">Swipe refresh</string>
+    <string name="swipe_summary">Pull down to reload page</string>
+    <string name="autohidetoolbar">Auto hide toolbar</string>
+
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Advanced +</string>
+    <string name="slide_1_desc">The easiest way to make professional apps for any website!</string>
+
+    <string name="slide_2_title">PRO level Features</string>
+    <string name="slide_2_desc">Most advanced features integrated to help your website &amp; business Grow!</string>
+
+    <string name="slide_3_title">Fully Customizable!</string>
+    <string name="slide_3_desc">You can customize the app anyway you like &amp; Enable | Disable features that you want!</string>
+
+    <string name="slide_4_title">You can customize this Slider</string>
+    <string name="slide_4_desc">What you just saw is the welcome slider, you can disable this in source code if you don\'t want or you can customize this with your info!. This will show only once</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="about_text">This is the about page, you can add your own text or other items here by going to activity_about.xml in \'layout\' folder. You can also disable this page in source code</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="thanks_rating">Thanks for your feedback!</string>
+    <string name="profile">Profile</string>
+    <string name="store">Store</string>
+    <string name="hide_toolbar">Hide toolbar</string>
+</resources>

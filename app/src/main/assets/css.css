@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Play&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&display=swap');
+
+body {
+  font-size: 1.3rem;
+
+/*//	background-image: linear-gradient(to right, #62b806 , #96c93d);*/
+
+
+}
+
+
+
+html {
+
+
+    font-size: .7em;
+
+    line-height: 1.0;
+
+
+
+
+}
+
+h3 {
+
+
+
+	padding-top: 1px;
+	padding-bottom: 1px;
+letter-spacing: 1px;
+	word-spacing: 1px;
+
+
+
+} a{
+color:#0C598C;
+
+}
+
+.h6, h6 {
+    font-size: 12px;
+
+
+}
+
+li{
+
+
+	padding: 3px;
+
+	color:gray;
+	letter-spacing: 1px;
+
+
+
+}
+p {
+	padding: 5px;
+line-height: 1.3;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+
+	font-size: 15px;
+
+	font-family: arial,sans;
+  font-weight:350;
+}
+
+hr{
+
+color:gray;
+	padding:1px;
+
+
+}

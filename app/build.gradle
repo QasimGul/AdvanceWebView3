@@ -1,0 +1,76 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        buildFeatures {
+            viewBinding true
+            dataBinding true
+        }
+
+        applicationId 'zidsworld.com.advancedplus'
+        multiDexEnabled true
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 25
+        versionName '2.5'
+
+        Date date = new Date()
+        String d = date.format('dd MMMM yyyy')
+        String dx = d.replaceAll(" ","_")
+        setProperty("archivesBaseName", "$dx _Advanced_Plus")
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    implementation 'androidx.preference:preference:1.2.0'
+
+    implementation 'com.google.firebase:firebase-ads:21.4.0'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.2.0'
+    implementation 'com.google.firebase:firebase-appindexing:20.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.onesignal:OneSignal:4.8.4'
+    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'androidx.webkit:webkit:1.5.0'
+    implementation "com.airbnb.android:lottie:5.2.0"
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+}

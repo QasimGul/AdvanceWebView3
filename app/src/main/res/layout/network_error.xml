@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#F7F7F7"
+    android:animateLayoutChanges="true"
+    android:visibility="gone"
+    android:id="@+id/errorLayout"
+    android:layout_height="match_parent">
+
+
+<!--<ImageView-->
+<!--    android:layout_width="150dp"-->
+<!--    android:src="@drawable/ic_wireless_error"-->
+<!--    android:layout_height="150dp"/>-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_fileName="no_connection.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+<LinearLayout
+
+    android:gravity="center"
+    android:alpha="0.8"
+
+    android:background="@null"
+    android:padding="20dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <Button
+
+        android:id="@+id/errorlayouHomeButton"
+        android:text="@string/home"
+
+        android:drawableTop="@drawable/ic_home"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textcolor"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/reloadButton"
+        android:padding="10dp"
+        android:textColor="@color/textcolor"
+        android:drawableTop="@drawable/ic_refresh"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Reload"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+    <Button
+        android:padding="10dp"
+        android:id="@+id/errorlayoutExitButton"
+
+        android:text="@string/exit"
+        android:textColor="@color/textcolor"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_shutdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:fontFamily="@font/rubik_sembold"
+        android:textColor="#353636"
+        android:textStyle="bold"
+        android:text="@string/internet_error"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/errorinfo"
+        android:alpha="0.3"
+        android:textColor="#4E4E4E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>

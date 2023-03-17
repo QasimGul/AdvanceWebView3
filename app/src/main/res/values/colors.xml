@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#92b2a0</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="colorPrimary">@color/maingradient_start_color</color> //This sets toolbar color
+    <color name="colorPrimaryDark">@color/maingradient_start_color</color> // This sets statusbar color
+    <color name="colorAccent">#07375E</color> //This sets various UI elements color, Example: Progress Loader
+    <color name="white">#FFFFFF</color> // This is an example, you can add more color here
+    <color name="black">#000000</color>
+    <color name="darktoolbar">#1F2021</color>
+    <color name="textcolor">#646465</color>
+    <color name="darkstatusbar">#1B1C1C</color>
+    <color name="darkThemeAccent">#917F01</color>
+     <color name="pref_icons_color">#43797E</color>
+    //BottomBar Colors
+    <color name="bottombar_Icons_Color">#B2131313</color>
+    <color name="bottombar_Icons_Press_Color">@color/colorAccent</color>
+    <color name="bottombar_Icons_Selected_Color">#B2131313</color>
+
+    //GRADIENT THEME COLORS
+    //because this app now supports gradient theme, you must change app colors here
+    //If you don't want gradient theme, you can set start_color,center_color and end_color the same
+    <color name="maingradient_start_color">@color/main_color</color> //#25509C
+    <color name="maingradient_center_color">@color/main_color</color>
+    <color name="maingradient_end_color">@color/main_color</color>  //#9D1F4F
+    <color name="main_color">#055B9A</color> //#03528C //2E70B1
+
+</resources>

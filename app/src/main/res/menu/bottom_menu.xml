@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_outline_home_24" />
+
+    <item android:id="@+id/bottom_chat"
+        android:title="@string/chat"
+        android:icon="@drawable/ic_outline_mark_chat_unread_24" />
+
+    <item android:id="@+id/bottom_account"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_outline_account_circle_24" />
+
+    <item android:id="@+id/bottom_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_outline_settings_24" />
+</menu>

@@ -11,7 +11,7 @@ android {
             dataBinding true
         }
 
-        applicationId 'com.beevn'
+        applicationId 'zidsworld.com.advancedplus'
         multiDexEnabled true
         minSdkVersion 21
         targetSdkVersion 32

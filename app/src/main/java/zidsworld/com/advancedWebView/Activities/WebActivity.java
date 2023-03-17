@@ -336,9 +336,7 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
 
                     } else if (id == R.id.nav_telegram) {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(TelegramLink)));
-
                     }
-
                     drawer.closeDrawer(GravityCompat.START);
                     return true;
                 }

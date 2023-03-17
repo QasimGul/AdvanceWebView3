@@ -35,12 +35,6 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
 
     private static final String TAG = "MyFirebaseMsgService";
 
-    /**
-     * Called when message is received.
-     *
-     * @param remoteMessage Object representing the message received from Firebase Cloud Messaging.
-     */
-    // [START receive_message]
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         Log.d(TAG, "From: " + remoteMessage.getFrom());
@@ -52,12 +46,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                         remoteMessage.getNotification().getBody());
             }
 
-
         // TODO(developer): Handle FCM messages here.
-        // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
         Log.d(TAG, "HAAAAAAAAAAAAAAAAAAAAAAAAA: " + remoteMessage.getFrom());
-
-
         }
 //
 //        // TODO: Implement this method to send token to your app server.

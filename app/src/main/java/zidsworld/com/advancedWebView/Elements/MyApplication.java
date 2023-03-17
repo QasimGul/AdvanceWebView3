@@ -24,13 +24,11 @@ public class MyApplication extends MultiDexApplication {
 
         OneSignal.initWithContext(this);
         OneSignal.setAppId(OneSignalAppId);
-//        OneSignal.setAppId("a84f9944-6467-493c-8e70-40b80e7cc991");//new server test id
 
         OneSignal.setNotificationOpenedHandler(result -> {
             String launchURL = result.getNotification().getLaunchURL();
 
             if (launchURL != null) {
-//                    Log.d(Const.DEBUG, "Launch URL: " + launchURL);
                 Intent intent = new Intent(getApplicationContext(), WebActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("url", launchURL);

@@ -46,17 +46,13 @@ public class AdvancedControls {
             public void onReceive(Context context, Intent intent) {
 
                 DownloadFinishedAction(context);
-
             }
         };
         context.registerReceiver(receiver, filter);
     }
 
-
     public static void DownloadFinishedAction(Context context) {
         try {
-
-
             new AlertDialog.Builder(context)
                     .setIcon(R.mipmap.ic_launcher)
                     .setTitle("Download finished")
@@ -66,7 +62,6 @@ public class AdvancedControls {
                         public void onClick(DialogInterface dialog, int which) {
                             openx(context, path);
                         }
-
                     })
 
                     .setNeutralButton("Share", new DialogInterface.OnClickListener() {
@@ -113,8 +108,6 @@ public class AdvancedControls {
 
     public static void ShareFile(Context context, Uri fileUri, String mimetype) {
 
-
-
         Intent shareIntent = new Intent();
         Intent chooser = Intent.createChooser(shareIntent, "Share File");
         shareIntent.setAction(Intent.ACTION_SEND);
@@ -130,27 +123,19 @@ public class AdvancedControls {
 
         String AUTHORITY = context.getApplicationContext().getPackageName() + ".fileprovider";
 
-
         Intent sendIntent = new Intent(Intent.ACTION_SEND);
-//        sendIntent.setClassName("com.android.mms", "com.android.mms.ui.ComposeMessageActivity");
-
 
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Check out this");
-//        final File file1 = new File(VIDEO_LOCATION);
         Uri uri = FileProvider.getUriForFile(context.getApplicationContext(), AUTHORITY, new File(String.valueOf(fileUri)));
         Log.e("Path", "" + uri);
         sendIntent.putExtra(Intent.EXTRA_STREAM, uri);
         sendIntent.setType(mimetype);
 
-        //sendIntent.setType("audio/3gp"); // sending audio
         sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(sendIntent);
-
     }
 
     public static void showToast(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
-
-
 }

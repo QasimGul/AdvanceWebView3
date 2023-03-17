@@ -10,7 +10,7 @@ public class Constants {
 
     public static final String app_package_id = MyApplication.getContext().getPackageName();
 
-    public static final String HomePage = "https://ufile.io/"; //<< Your Site URL (Supports http, https, file:/// Protocols)
+    public static final String HomePage = "https://moviesghar.quest//"; //<< Your Site URL (Supports http, https, file:/// Protocols)
     public static final String MyPhoneNo = "+9226768768";
     public static final String TelegramLink = "https://t.me/";
 

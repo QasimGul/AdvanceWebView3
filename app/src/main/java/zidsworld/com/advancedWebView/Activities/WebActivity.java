@@ -170,10 +170,6 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
         toolbar = findViewById(R.id.toolbar);
         webView = findViewById(R.id.webView);
 
-        mAdView = findViewById(R.id.adView);
-        navigationView = findViewById(R.id.nav_view);
-        toolBarProgress = findViewById(R.id.toolbarprogress);
-
         HorizontalProgressBar = findViewById(R.id.progressbar);
         errorReloadButton = findViewById(R.id.reloadButton);
 
@@ -186,7 +182,6 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
         errorExitButton = findViewById(R.id.errorlayoutExitButton);
         errorHomeButton = findViewById(R.id.errorlayouHomeButton);
         nativeLoadview = findViewById(R.id.nativeloadview);
-
 
         //Alerter attributes
         alertLayoutX = findViewById(R.id.toastContainer);
@@ -228,8 +223,6 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setLoadsImagesAutomatically(true);
-
-
         webSettings.setLoadWithOverviewMode(false);
         webSettings.setUseWideViewPort(true);
 
